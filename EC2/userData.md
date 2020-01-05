@@ -11,9 +11,13 @@
 
 ### Configure Instance Details
 Number of Instances: 1
+
 Network: Default
+
 Subnet: No preference
+
 Auto Assign Public IP: Enable
+
 Shutdown Behaviour: Stop
 
 Go to Advance Details

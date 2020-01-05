@@ -10,39 +10,32 @@
 4. Instance Type: t2.micro 
 
 ### Configure Instance Details
-Number of Instances: 1
-
-Network: Default
-
-Subnet: No preference
-
-Auto Assign Public IP: Enable
-
-Shutdown Behaviour: Stop
-
-Go to Advance Details
-
-Select the text type
-
-Paste the following commands. All the below command will be executed in Admin access by default 
+* Number of Instances: 1
+* Network: Default
+* Subnet: No preference
+* Auto Assign Public IP: Enable
+* Shutdown Behaviour: Stop
+* Go to Advance Details
+	* Select the text type
+	* Paste the following commands. All the below command will be executed in Admin access by default 
   
-  \#!/bin/bash
+  	\#!/bin/bash
   
-  yum update -y
+  	yum update -y
   
-  yum install -y httpd
+  	yum install -y httpd
   
-  service httpd start
+  	service httpd start
   
-  chkconfig httpd on
+  	chkconfig httpd on
 
 
 ### Add Storage
 Keep the default EBS (Elastic Block Storate) allocated by AWS to EC2 instance
 
 ### Add Tad
-Key: Name
-Value: Amazon Linux
+* Key: Name
+* Value: Amazon Linux
 
 ### Security Group
 Select existing Secutity Group : my-first-instance
@@ -51,7 +44,7 @@ Select existing Secutity Group : my-first-instance
 
 Type: http, protocol: tcp, port-range: 80, source: anywhere, description: http enabled
 
-Click review and launch
+* Click review and launch
 
 ### Select a key pair
 

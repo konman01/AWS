@@ -1,17 +1,17 @@
 Select EC2 Service in AWS Management Console
 
 ### Launch Instance
-1. Select Oregon Availability Zone
-2. Click on Launch Instance Button
-3. Amazon Linux AMI: Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type
-4. Instance Type: t2.micro 
+* Select Oregon Availability Zone
+* Click on Launch Instance Button
+* Amazon Linux AMI: Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type
+* Instance Type: t2.micro 
 
 ### Configure Instance Details
-Number of Instances: 1
-Network: Default
-Subnet: No preference
-Auto Assign Public IP: Enable
-Shutdown Behaviour: Stop
+* Number of Instances: 1
+* Network: Default
+* Subnet: No preference
+* Auto Assign Public IP: Enable
+* Shutdown Behaviour: Stop
 
 ### Add Storage
 Keep the default EBS (Elastic Block Storate) allocated by AWS to EC2 instance
@@ -21,13 +21,13 @@ Key: Name
 Value: Amazon Linux
 
 ### Security Group
-Select New Secutity Group 
-Security Group Name: my-first-instance
-Description: My First Security Group Created for AMS Linux
+* Select New Secutity Group 
+* Security Group Name: my-first-instance
+* Description: My First Security Group Created for AMS Linux
 
 Type: ssh, protocol: tcp, port-range: 22, source: anywhere, description: ssh is enables
 
-Click review and launch
+* Click review and launch
 
 ### Create a key pair
 

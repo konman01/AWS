@@ -53,6 +53,10 @@ Type: http, protocol: tcp, port-range: 80, source: anywhere, description: http e
 
 	ssh -i ec2-masterclass.pem ec2-user@<public-ip-address>
 
+	In browser, go to http://public-ip-address
+
+	you will get Amazon AMI Image details
+
 
 ### Stop or Terminate the instance
 

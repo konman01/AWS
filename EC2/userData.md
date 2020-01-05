@@ -21,9 +21,13 @@ Select the text type
 Paste the following commands., All the below command will be executed in Admin access
   
   \#!/bin/bash
+  
   yum update -y
+  
   yum install -y httpd
+  
   service httpd start
+  
   chkconfig httpd on
 
 

@@ -20,16 +20,11 @@ Go to Advance Details
 Select the text type
 Paste the following commands., All the below command will be executed in Admin access
   
- #!/bin/bash
- # Update the os
+  \#!/bin/bash
   yum update -y
-
- # install httpd
- yum install -y httpd
-
- # Start the httpd service
- service httpd start
- chkconfig httpd on
+  yum install -y httpd
+  service httpd start
+  chkconfig httpd on
 
 
 ### Add Storage

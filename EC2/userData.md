@@ -21,8 +21,10 @@ Auto Assign Public IP: Enable
 Shutdown Behaviour: Stop
 
 Go to Advance Details
+
 Select the text type
-Paste the following commands., All the below command will be executed in Admin access
+
+Paste the following commands. All the below command will be executed in Admin access by default 
   
   \#!/bin/bash
   

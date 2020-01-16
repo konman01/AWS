@@ -1,7 +1,7 @@
 	
 
      
-###Select EC2 Service in AWS Management Console
+### Select EC2 Service in AWS Management Console
 
 ### Launch Instance
 1. Select Oregon Availability Zone

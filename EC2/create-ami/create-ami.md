@@ -82,7 +82,7 @@ http://<ip address of the instance>:4567/
 
 #### long running configuration (persist after reboot)
 
-Execute the command provided in [a create-ami.sh](https://github.com/konman01/AWS/blob/master/EC2/create-ami/create-ami.sh) the script
+Execute the command provided in [create-ami.sh](https://github.com/konman01/AWS/blob/master/EC2/create-ami/create-ami.sh) the script
 
 
 ### Add the file chkconfig to execute automatically when the system starts or bootup

@@ -32,8 +32,11 @@ Load balancer Protocol | Load Balancer Port | Instance Protocol | Instance Port
 HTTP | 80 | HTTP | 4567
 
 Load Balancer Protocol: Protocol that loadbalancer enables.  
+
 Load Balancer port: Port at which the load balancer will be listening.  
+
 Instancer Protocol: Protocol the instance uses. 
+
 Instance Port: Port at which the instance will be listening. 
 
 ### Configure Security Group for the Load Balancer
@@ -45,11 +48,15 @@ Instance Port: Port at which the instance will be listening.
 
 ### Configure Health Check
 ping protocol: HTTP (Protocol that the load balancer uses to ping the instancer). 
+
 Ping port: 4567 (Port at which the instances will be listening). 
 
 Response Time: 5 (Time with in which the load balancer expects the response from the server). 
+
 Interval: 30 (Perform Health Check for every 30 secs). 
+
 Unhealth Thresold: 2 (If the health check is wrong for 2 times in row, then instance is considered as unhealth). 
+
 Unhealth Thresold: 5 (If the health check is right for 5 times in row, then instance is considered as health). 
 
 

@@ -45,43 +45,47 @@ Type: ssh, protocol: tcp, port-range: 22, source: anywhere, description: ssh is 
 * Execute the following command
 	ssh -i ec2-masterclass.pem ec2-user@<public-ip-address>
 
-# upgrade machine
+### Execute the following commands to install the dependencies in the instance hosted
+
+#### upgrade machine
 sudo yum update -y
 
-# install java 8 jdk
+#### install java 8 jdk
 sudo yum install -y java-1.8.0-openjdk-devel
 
-# set java jdk 8 as default
+#### set java jdk 8 as default
 sudo /usr/sbin/alternatives --config java
 sudo /usr/sbin/alternatives --config javac
 
-# verify java 8 is the default
+#### verify java 8 is the default
 java -version
 
-# Download app
+#### Download app
 cd /home/ec2-user
 wget https://github.com/simplesteph/ec2-masterclass-sampleapp/releases/download/v1.0/ec2-masterclass-sample-app.jar
 
-# Test the app
+#### Test the app
 java -Xmx700m -jar ec2-masterclass-sample-app.jar
 
-# Application will be stated and will running on port 4567
+#### Application will be stated and will running on port 4567
 
-# Add the port 4567 to the security group
+#### Add the port 4567 to the security group
 
 Type: custom, protocol: tcp, port-range: 4567, source: anywhere, description: Java application running port
 
-# Application is available and can be accessed using the following URL
+#### Application is available and can be accessed using the following URL
 
 http://<ip address of the instance>:4567/
 
-# Execute the following shell program to automatically install and host the Java application
+### Execute the following shell program to automatically install and host the Java application
 
 
-# long running configuration (persist after reboot)
-# write the ec2sampleapp file
+#### long running configuration (persist after reboot)
+
+#### write the ec2sampleapp file
+
 sudo bash -c 'cat << \EOF > /etc/init.d/ec2sampleapp
-#
+
 # EC2 Sample App    Init script for EC2 Sample App
 #
 # chkconfig: 345 99 76
@@ -150,14 +154,14 @@ esac
 EOF'
 
 
-# permissions to start the file
+### Give permissions to start the file
 sudo chmod +x /etc/init.d/ec2sampleapp
 
-# apply across reboots
-sudo chkconfig --add ec2sampleapp
-sudo chkconfig ec2sampleapp on
+#### apply across reboots to automatically execute the script
+* sudo chkconfig --add ec2sampleapp
+* sudo chkconfig ec2sampleapp on
 
-# Save the instance as an AMI
+### Save the instance as an AMI
  * Go the instance
  * Select Action tab
  * Go to Image
@@ -165,13 +169,13 @@ sudo chkconfig ec2sampleapp on
 
  This will create the AMI
 
-# Host the instance using the AMI
+### Host the instance using the AMI
  * Go to AMI section
  * Write click on the AMI created
  * Launch the instance
 
 
-# The Java application will be hosted automatically to AWS which can be accssed using the public ip of the instance created using the AMI
+### The Java application will be hosted automatically to AWS which can be accssed using the public ip of the instance created using the AMI
 
 
 

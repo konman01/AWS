@@ -1,4 +1,20 @@
-Select EC2 Service in AWS Management Console
+### Create Security Groups 
+
+#### Create Security grop for Admin access
+
+* Go to Security Group features in EC2 
+* Click on create security group
+* Security Group Name - Admin SSH Access
+* Type: SSH, protocol: ssh, port-range: 22, source: anywhere, description: SSH Access SG
+
+
+#### Create SG for Application
+
+* Go to Security Group features in EC2 
+* Click on create security group
+* Security Group Name - java Application 
+* Type: Custom, protocol: tcp, port-range: 4567, source: anywhere, description: Java Application SG
+
 
 ### Launch Instance
 * Select Oregon Availability Zone
@@ -18,16 +34,11 @@ Keep the default EBS (Elastic Block Storate) allocated by AWS to EC2 instance
 
 ### Add Tad
 Key: Name
-Value: Amazon Linux
+Value: Java Application
 
 ### Security Group
-* Select New Secutity Group 
-* Security Group Name: my-first-instance
-* Description: My First Security Group Created for AMS Linux
-
-Type: ssh, protocol: tcp, port-range: 22, source: anywhere, description: ssh is enables
-
-* Click review and launch
+* Select Existing Security group 
+* Add the Admin SSH Access and java Application  security group created earlier
 
 ### Create a key pair
 
@@ -47,9 +58,4 @@ Type: ssh, protocol: tcp, port-range: 22, source: anywhere, description: ssh is 
 
 
 ### Stop or Terminate the instance
-
-
-
-
-
 

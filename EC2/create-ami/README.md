@@ -1,3 +1,5 @@
+# AMI 
+
 Select EC2 Service in AWS Management Console
 
 ### Launch Instance

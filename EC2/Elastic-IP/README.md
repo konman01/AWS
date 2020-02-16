@@ -1,3 +1,5 @@
+# Elastic IP
+
 ### Create Elastic IP address
 
 * Go to Elastic IP Features in EC2 

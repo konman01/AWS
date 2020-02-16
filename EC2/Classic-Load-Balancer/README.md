@@ -19,11 +19,11 @@
 * Attach 2 security groups created (Admin SSH Access, java Application) to the instances
 
 
-### Elastic Load Balancer Setup
+### Classic Load Balancer Setup
 
 * Go to load balancer feature in EC2
 * Create Load Balancer
-* Select the Elastic Load Balancer
+* Select the Classic Load Balancer
 * Load Balancer - elb-for-javaapp
 * Select Default VPC
 
@@ -41,9 +41,8 @@ Instance Port: Port at which the instance will be listening.
 
 ### Configure Security Group for the Load Balancer
 
-* Go to Security Group features in EC2. 
 * Click on create security group. 
-* Security Group Name - Elastic Load Balancer SG. 
+* Security Group Name - Classic Load Balancer SG. 
 * Type: Custom, protocol: tcp, port-range: 80, source: anywhere, description: Java Application SG. 
 
 ### Configure Health Check
@@ -68,7 +67,7 @@ Review and Create
 
 ### Access the application through the browser
 
-http://`<ip address of the laad balancer>`:80\
+http://`<ip address of the laad balancer>`:80
 
 
 ### Add Security Group 

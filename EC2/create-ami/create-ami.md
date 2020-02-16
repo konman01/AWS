@@ -41,9 +41,9 @@ Type: ssh, protocol: tcp, port-range: 22, source: anywhere, description: ssh is 
 
 * go to directory where key-pair is downloaded
 * give permission to the key
-	chmod 777 ec2-masterclass.pem
+	chmod 400 ec2-masterclass.pem
 * Execute the following command
-	ssh -i ec2-masterclass.pem ec2-user@<public-ip-address>
+	ssh -i ec2-masterclass.pem ec2-user@`<ip address of the instance>`
 
 ### Execute the following commands to install the dependencies in the instance hosted
 
@@ -75,7 +75,7 @@ Type: custom, protocol: tcp, port-range: 4567, source: anywhere, description: Ja
 
 #### Application is available and can be accessed using the following URL
 
-http://<ip address of the instance>:4567/
+http://`<ip address of the instance>`:4567/
 
 ### Execute the following shell program to automatically install and host the Java application
 
@@ -101,7 +101,6 @@ sudo chmod +x /etc/init.d/ec2sampleapp
  * Go to Image
  * Select create image
 
- This will create the AMI
 
 ### Host the instance using the AMI
  * Go to AMI section

@@ -109,8 +109,8 @@ sudo chmod +x /etc/init.d/ec2sampleapp
  * Launch the instance
 
 
-### The Java application will be hosted automatically to AWS which can be accssed using the public ip of the instance created using the AMI
+#### The Java application will be hosted automatically to AWS which can be accssed using the public ip of the instance created using the AMI
 
 
 
-### Stop or Terminate the instance
+#### Stop or Terminate the instance

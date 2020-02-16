@@ -9,9 +9,9 @@ The features i coved in this projects are
 3. [ Create AMI for a Java application ](https://github.com/konman01/AWS/tree/master/EC2/create-ami)
 4. [ Security Group in Detail ](https://github.com/konman01/AWS/tree/master/EC2/Security-Group)
 5. [ Elasitc IP ](https://github.com/konman01/AWS/tree/master/EC2/Elastic-IP)
-6. [ Elastic Load Balancer ](#)
+6. [ Classic Load Balancer ](https://github.com/konman01/AWS/tree/master/EC2/Classic-Load-Balancer)
 7. [ Network Load balancer ](#)
-8. [ Application Load balancer ](#)
+8. [ Application Load balancer ](https://github.com/konman01/AWS/tree/master/EC2/Application-Load_Balancer)
 9. [ Auto Scaling ](#)
 10. [ Elastic Block Store ](#)
 

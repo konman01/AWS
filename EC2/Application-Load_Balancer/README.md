@@ -103,7 +103,7 @@
 * Select Listener of the Application Load Balancer
 * View and edit the rules
 * Add the following Conditions
-![image](https://github.com/konman01/AWS/blob/master/images/Screen%20Shot%202020-02-15%20at%2012.24.46%20PM.png)
+![image](https://github.com/konman01/AWS/blob/master/images/conditions.png)
 
 ### Access the application through the browser
 
